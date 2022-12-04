@@ -11,6 +11,9 @@ Neste projeto utilizei conceitos de HTML, CSS e JS para criar uma aplicação SP
 na página sem atualização, layout com CSS GRID e FlEX BOX e @media para tornar layout responsivo. Com React utilizei useState para alterar os dados, useEffect 
 e props para passar os dados entre os componentes e Axios para interligar o front-end com o back-end que persiste os dados no banco MySQL com express.
 
+- Dialog do @material-ui para o card onde edita e exlui as postagens.
+- Yup para validar título e conteúdo, tornei os dois campos obrigatórios e estipulei tamanho minimo e máximo.
+
 ### Imagens
 
 <img src="client/src/img1.PNG" width="600px">
