@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  font-family: Anton;
+}
+
+body {
+  background-color: antiquewhite;
+}
+
+.createPost h1 {
+  font-size: 50px;
+  padding: 10px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.field input{
+  width: 80%;
+  height: 40px;
+  font-size: 20px;
+}
+
+.field textarea {
+  width: 100%;
+  height: 200px;
+  font-size: 20px;
+}
+
+.App {
+  max-width: 40%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 300px 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+    'createPost'
+    'createPost'
+    'cards'
+    'cards'
+    'cards'
+  ;
+  justify-items: center;
+  gap: 30px;
+  min-width: 500PX;
+}
+
+.createPost {
+  grid-area: createPost;
+  width: 100%;
+  background-color: #dcdcdc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: CENTER;
+  gap: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 10px 11px rgba(0,0,0, 0.7);
+}
+
+.createPost Button {
+  background-color: rgba(0,0,0, 0.7);
+  margin-top: 10px;
+  margin-left: 140px;
+  margin-bottom: 20px;
+}
+
+.createPost Button:hover {
+  background-color: black;
+}
+
+
+.cards {
+  grid-area: cards; 
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content:  flex-end;
+  align-items: center;
+  background-color: #dcdcdc;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 10px 11px rgba(0,0,0, 0.7);
+  gap: 10px
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  padding: 10px;
+}
+
+.cardTitle {
+  font-size: 50px;
+}
+
+.cardContent {
+  font-size: 20px;
+}
+
+.fieldError{
+  display: block;
+  color: rgb(237, 67, 55);
+  font-size: 1.1em;
+  font-weight: 300;
+}
+
+@media(max-width: 720px) {
+  .App{
+      width: 100%;
+      min-width: 500PX;
+      margin: 0 auto;
+      grid-template-columns: 1fr;
+      grid-template-rows: 300px 1fr 1fr 1fr 1fr;
+      grid-template-areas: 
+        'createPost'
+        'createPost'
+        'cards'
+        'cards'
+        'cards'
+      ;
+      
+  }
+  
+}
